@@ -6,17 +6,11 @@
   "license": "MIT",
   "homepage": "https://github.com/mafintosh/peerflix",
   "main": "index.js",
-  "bugs": {
-    "url": "https://github.com/mafintosh/peerflix/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mafintosh/peerflix.git"
-  },
-  "bin": {
+   "bin": {
     "peerflix": "./app.js"
   },
   "dependencies": {
+    "global-tunnel": "1.2.0",
     "airplay-js": "^0.2.5",
     "clivas": "^0.1.4",
     "inquirer": "^0.8.0",

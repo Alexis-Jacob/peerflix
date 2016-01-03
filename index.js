@@ -7,6 +7,11 @@ var url = require('url')
 var mime = require('mime')
 var pump = require('pump')
 
+require('global-tunnel').initialize({
+  host: '127.0.0.1',
+  port: 8118
+});
+
 var parseBlocklist = function (filename) {
   // TODO: support gzipped files
   var blocklistData = fs.readFileSync(filename, { encoding: 'utf8' })
